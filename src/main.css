@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Monda&display=swap');
+
+
+body{
+    background: url("./assets/images/bg.jpg") center/cover;
+}
+
+body::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, rgba(3,18,61,1) 0%, rgba(255,255,255,1) 100%);
+    z-index: -1;
+    opacity: .6;
+}
+
+.drum-machine{
+    font-family: 'Monda', sans-serif;
+    font-size: .8em;
+    width: 335px;
+    height: 500px;
+    margin: 5px auto;
+    border: 1px solid rgba(128, 126, 122, .3);
+    background: rgb(230, 228, 225); 
+    border-radius: 5px;
+    -webkit-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.6);
+    box-shadow: 2px 2px 3px 2px rgba(0,0,0,0.6);
+}
+
+.drum-machine-left{
+    margin: 0;
+    display: block;
+    width: 330px;
+}
+
+.drum-machine-logo{
+    font-family: 'Anton', sans-serif;
+    font-size: 1em;
+    font-style: italic;
+    display: block;
+    width: 330px;
+    margin: 0 0 0 10px;
+}
+
+.drum-machine_display{
+    font-size: 1.2em;
+    margin: 10px 95px 20px 95px;
+    width: 140px;
+    height: 60px;
+    display: inline-block;
+    float: left;
+    background-color: rgb(98, 142, 189);
+    color: white;
+    -webkit-box-shadow: inset 1px 1px 1px 0px rgba(0,0,0,0.75);
+    box-shadow: inset 1px 1px 1px 0px rgba(0,0,0,0.75);
+    line-height: 60px;
+    text-align: center;
+}
+
+.drum-pads{
+    width: 330px;
+    height: 330px;
+    border: 1px solid rgba(163, 162, 160, .8);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 20px auto 10px auto;
+    float: right;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    background: rgba(163, 162, 160, .6);
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.75);
+}
+
+.drum-pad{
+    width: 98px;
+    margin: 5px 5px;
+    height: 98px;
+    line-height: 70px;
+    border: 1px solid rgba(128, 126, 122, .8);;
+    display: inline-block;
+    background: rgba(128, 126, 122, .6);
+    border-radius: 3px;
+    color: white;
+    -webkit-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
+}
+
+.drum-pad_text{
+    text-align: center;
+    padding: 10px;
+}
+
+.drum-pad__key{
+    font-size: .8em;
+}
+
+.clip{
+    background: red;
+    height: 100px;
+    width: 100px;
+}
+
+@media only screen and (min-width: 1024px){
+    .drum-machine{
+        width: 600px;
+        height: 400px;
+        margin: 100px auto;
+    }
+    
+    .drum-machine-left{
+        display: inline-block;
+        width: 200px;
+    }
+    
+    .drum-machine-logo{
+        font-size: 1.7em;
+        display: inline-block;
+        width: 200px;
+        margin: 220px 0 0 30px;
+    }
+    
+    .drum-machine_display{
+        margin: 40px 0 0 30px;
+        display: inline-block;
+    }
+    
+    .drum-pads{
+        margin: 30px 30px 30px 0;
+    }
+    
+    .drum-pad__key{
+        font-size: 1em;
+    }
+}
